@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudiosView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="N66-If-3fT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" tag="4" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AudiosView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qy-3J-3nC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY AUDIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-TX-4Ys">
+                            <rect key="frame" x="262.5" y="16" width="88.5" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="pQD-iR-PCP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6G-Vc-BND">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="j6G-Vc-BND" secondAttribute="height" multiplier="1:1" id="tCi-7P-Wc8"/>
+                            </constraints>
+                            <state key="normal" image="burger icon"/>
+                            <connections>
+                                <action selector="burgerButtonAction:" destination="-1" eventType="touchUpInside" id="OHz-4Q-Mcc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.23137254901960785" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="1y0-UE-wUC"/>
+                        <constraint firstItem="j6G-Vc-BND" firstAttribute="leading" secondItem="6qy-3J-3nC" secondAttribute="leading" id="JBX-O1-VfK"/>
+                        <constraint firstAttribute="bottom" secondItem="j6G-Vc-BND" secondAttribute="bottom" id="NGQ-P6-g3V"/>
+                        <constraint firstAttribute="trailing" secondItem="5eh-TX-4Ys" secondAttribute="trailing" constant="24" id="hNU-V7-AvC"/>
+                        <constraint firstItem="j6G-Vc-BND" firstAttribute="top" secondItem="6qy-3J-3nC" secondAttribute="top" id="ito-HN-scD"/>
+                        <constraint firstItem="j6G-Vc-BND" firstAttribute="height" secondItem="6qy-3J-3nC" secondAttribute="height" id="lLl-ts-q09"/>
+                        <constraint firstAttribute="bottom" secondItem="5eh-TX-4Ys" secondAttribute="bottom" constant="16" id="n4V-Kk-TaH"/>
+                        <constraint firstItem="5eh-TX-4Ys" firstAttribute="width" secondItem="6qy-3J-3nC" secondAttribute="width" multiplier="85/360" id="tG0-LQ-z1m"/>
+                        <constraint firstItem="5eh-TX-4Ys" firstAttribute="top" secondItem="6qy-3J-3nC" secondAttribute="top" constant="16" id="v2J-gY-Gd6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.76803089970000005" green="0.76803089970000005" blue="0.76803089970000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6qy-3J-3nC" secondAttribute="trailing" id="AmS-GM-P1R"/>
+                <constraint firstItem="6qy-3J-3nC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Zkp-b3-pLi"/>
+                <constraint firstItem="6qy-3J-3nC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z7I-sT-FQb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-86" y="-74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="burger icon" width="48" height="48"/>
+    </resources>
+</document>
