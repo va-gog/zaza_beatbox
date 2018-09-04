@@ -22,12 +22,14 @@
     
     TimeLineView *timeLine = [[TimeLineView alloc] initWithFrame:CGRectMake(70.0, 100, self.view.bounds.size.width - 70.0, 20)];
     [self.view addSubview:timeLine];
-    
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
     ColorsForGradient *colorsForGradient = [[ColorsForGradient alloc] init];
     NSDictionary *gradientPoints = @{@"startPoint" : [NSNumber valueWithCGPoint:CGPointMake(0.0, 1.0)], @"endPoint" : [NSNumber valueWithCGPoint:CGPointMake(0.0, 0.0)]};
-
-    [self.view.layer insertSublayer:[GradientMaker makeGradientWithColors:colorsForGradient.projectsThirdGradientColors WithFrame:self.view.frame gradientPoints:gradientPoints] atIndex:0];
-}
+    
+    [self.view.layer insertSublayer:[GradientMaker makeGradientWithColors:colorsForGradient.projectsThirdGradientColors WithFrame:self.view.frame gradientPoints:gradientPoints] atIndex:0];}
 
 - (BOOL)prefersStatusBarHidden{
     return YES;

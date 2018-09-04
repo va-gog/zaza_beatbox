@@ -1,10 +1,40 @@
-# OSX
-*/.DS_Store
+# OS X
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.gcno
+*.gcda
+
+#idea
+.idea/
+
+
+!Carthage/*
+Carthage/Checkouts
+
+# nexus dependencies
+nexus_frameworks/
+
+node_modules/
+.vscode/.react
+
+#ruby
+vendor/bundle
+vendor/cache
+
